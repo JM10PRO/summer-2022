@@ -3,16 +3,11 @@
 if ($_POST) {
     $valorA=$_POST['valorA'];
     $valorB=$_POST['valorB'];
-    
-    if($valorA==$valorB){
-        echo "El valor de A es igual que el de B <br>";
 
-        if($valorA==4){
-            echo "El valor es 4 <br>";
-        }
-        if($valorA==5){
-            echo "El valor es 5 <br>";
-        }
+    if($valorA != $valorB){
+        echo "El valor de A es diferente que B";
+    }else{
+        echo "El valor de A es igual que B";
     }
 }
 
@@ -23,10 +18,10 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores aritméticos</title>
+    <title>Operadores</title>
 </head>
 <body>
-    <form action="ejercicio11.php" method="post">
+    <form action="ejercicio12.php" method="post">
     valor A:
     <input type="text" name="valorA" id="">
     <br>
